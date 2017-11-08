@@ -1,0 +1,32 @@
+﻿; Return the number of positive numbers in list L
+(define (num_pos L)
+	(cond	((null? L)	0)
+		((> (car L) 0)	(+ 1 (num_pos (cdr L))))
+		(else		(num_pos (cdr L))) ))
+
+; Return a list of the positive numbers in list L
+(define (pos_list L)
+	(cond	((null? L)	'( ))
+		((> (car L) 0)	(cons (car L) (pos_list (cdr L))))
+		(else		(pos_list (cdr L))) ))
+
+; Return #T if all the numbers in list L are positive; else return #F
+(define (all-pos? L)
+	(cond	((null? L)	#T)
+		((> (car L) 0)	(all-pos? (cdr L)))
+		(else		#F) ))
+
+; Return #T if at least one of the numbers in list L is positive;
+; else return #F
+(define (has-pos? L)
+	(cond	((null? L)	#F)
+		((> (car L) 0)	#T)
+		(else		(has-pos? (cdr L))) ))
+
+; Return the capital of State in the list Info
+; given State, list evaluated as (State [atom which is that state's capital])
+(define (state_capital State Info)
+	(cond	((null? Info)	'none)
+		((equal? State (caar Info))	(cadar Info))
+		(else		(state_capital State (cdr Info))) ))
+

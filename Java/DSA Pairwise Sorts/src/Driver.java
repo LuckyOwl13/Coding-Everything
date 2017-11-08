@@ -1,0 +1,340 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Driver {
+	/** Reader used to receive input**/
+	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		int[] best = new int[] {-11,-5,1,3,5,27,45};
+		int[] worst = new int[] {45,27,5,3,1,-5,-11};
+		int[] rand = new int[] {5,1,27,45,-11,-5,3};
+
+		printMenu();
+	}	// end main
+
+	private static void printMenu() throws NumberFormatException, IOException{
+		do{			
+			System.out.print("\nSelect from the following menu:"
+					+ "\n\t1. Bubble Sort."
+					+ "\n\t2. Improved Bubble Sort."
+					+ "\n\t3. Selection Sort."
+					+ "\n\t4. Improved Selection Sort."
+					+ "\n\t5. Insertion Sort."
+					+ "\n\t6. Exit program."
+					+ "\nMake you menu selection now: ");
+
+			int select = Integer.parseInt(br.readLine().trim());
+			System.out.print(select + "\n\n");
+
+			switch (select){
+			case 1: System.out.println("\tBubble Sort");
+				break;
+			case 2: System.out.println("\tImproved Bubble Sort");
+				break;
+			case 3: System.out.println("\tSelection Sort");
+				break;
+			case 4: System.out.println("\tImproved Selection Sort");
+				break;
+			case 5: System.out.println("\tInsertion Sort");
+				break;
+			case 6: System.out.println("\tExiting program...Good Bye");
+					System.exit(0);
+				break;
+			default: System.out.println("Error, please use valid input");
+				break;
+			}	// end switch
+
+			if (select > 0 && select < 6){
+				System.out.print("Enter number of integers: ");
+				int numInt = Integer.parseInt(br.readLine());
+				System.out.print(numInt + "\n");
+
+				int[] list = new int[numInt];			// make array to hold input
+
+				for (int i = 1; i <= numInt; i++){		// load up new array
+					System.out.printf("Enter integer number %s: ",i);
+					list[i - 1] = Integer.parseInt(br.readLine());
+					System.out.print(list[i - 1] + "\n");
+				}	// end for
+
+				System.out.println("Input data:");
+				for (int i : list){
+					System.out.print(i + "   ");
+				}
+
+				System.out.println("\nSorted data:");
+
+				int[] results = new int[numInt];
+
+				switch (select){
+				case 1: results = bubble(list);
+					break;
+				case 2: results = bubbleImp(list);
+					break;
+				case 3: results = select(list);
+					break;
+				case 4: results = selectImp(list);
+					break;
+				case 5: results = insert(list);
+					break;
+				}	// end switch
+
+
+				for (int i = 0; i < numInt; i++){		// load up new array
+					System.out.print(results[i] + "   ");
+				}	// end for
+				System.out.println("\nNumber of comparisons: " + results[numInt]);
+				System.out.println("Number of swaps: " + results[numInt + 1]);
+			}	// end if
+		} while (true);		// end do-while
+	}	// end printMenu
+
+	// #1
+	private static int[] bubble(int[] list){
+		int n = list.length - 1;
+		int[] sorted = new int[n + 3];	// two longer than input array
+		int compCount = 0;	// number of compares to sort
+		int swapCount = 0;	// number of swaps
+
+		for (int j = 0; j < n; j ++){
+			int index = 0;
+
+			for (int i = 1; i < n - j + 1; i++){	// find biggest int
+				if (list[i] > list[index]){
+					index = i;
+				}	// end if
+				compCount++;	// increment # of compares
+			}	//	end for
+
+			int biggest = list[index];
+
+			for (int i = index; i < n - j; i++){	// move everything down
+				list[i] = list[i + 1];
+			}	// end for
+
+			if (biggest != list[n - j]){
+				list[n - j] = biggest;				// put biggest at end
+				swapCount++;	// increment # of swaps
+			}	// end if
+		}	// end for
+
+		for (int i = 0; i <= n; i ++){				// transfer list into sorted
+			sorted[i] = list[i];
+		}	// end for
+		sorted[sorted.length - 2] = compCount;	// number of comparisons
+		sorted[sorted.length - 1] = swapCount;	// number of swaps
+
+		return sorted;
+	}	// end bubble
+
+	// #2
+	private static int[] bubbleImp(int[] list){
+		int n = list.length - 1;
+		int[] sorted = new int[n + 3];	// two longer than input array
+		int compCount = 0;	// number of compares to sort
+		int swapCount = 0;	// number of swaps
+
+		int index;
+		boolean needAgain = true;		// if last iteration saw a need to swap again
+		for (int j = 0; needAgain && j < n; j ++){
+			index = 0;
+			needAgain = false;
+			for (int i = 1; i < n - j + 1; i++){	// find biggest int
+				if (list[i] > list[index]){
+					index = i;
+				}	// end if
+				else{
+					needAgain = true;
+				}	// end else
+				compCount++;	// increment # of compares
+			}	//	end for
+
+			int biggest = list[index];
+
+			for (int i = index; i < n - j; i++){	// move everything down
+				list[i] = list[i + 1];
+			}	// end for
+
+			if (biggest != list[n - j]){
+				list[n - j] = biggest;				// put biggest at end
+				swapCount++;	// increment # of swaps
+			}	// end if
+		}	// end for
+
+		for (int i = 0; i <= n; i ++){	// transfer list into sorted
+			sorted[i] = list[i];
+		}	// end for
+		sorted[sorted.length - 2] = compCount;	// number of comparisons
+		sorted[sorted.length - 1] = swapCount;	// number of swaps
+
+
+		return sorted;
+	}	// end bubbleImp
+
+	// #3
+	private static int[] select(int[] list){
+		int n = list.length - 1;
+		int[] sorted = new int[n + 3];	// two longer than input array
+		int compCount = 0;	// number of compares to sort
+		int swapCount = 0;	// number of swaps
+		
+		for (int j = 0; j < n; j ++){
+			int index = 0;
+
+			for (int i = 1; i < n - j + 1; i++){	// find biggest int
+				if (list[i] > list[index]){
+					index = i;
+				}	// end if
+				compCount++;	// increment # of compares
+			}	//	end for
+
+			int biggest = list[index];
+			int toSwitch = list[n - j];
+
+			if (biggest != toSwitch){
+				list[n - j] = biggest;				// put biggest at end
+				list[index] = toSwitch;
+				swapCount++;	// increment # of swaps
+			}	// end if
+		}	// end for		
+		
+		for (int i = 0; i <= n; i ++){	// transfer list into sorted
+			sorted[i] = list[i];
+		}	// end for
+		sorted[sorted.length - 2] = compCount;	// number of comparisons
+		sorted[sorted.length - 1] = swapCount;	// number of swaps
+
+
+		return sorted;
+	}	// end select
+
+	// #4
+	private static int[] selectImp(int[] list){
+		int n = list.length - 1;
+		int[] sorted = new int[n + 3];	// two longer than input array
+		int compCount = 0;	// number of compares to sort
+		int swapCount = 0;	// number of swaps
+		
+		int index;
+		boolean swappedLast = true;		// if last iteration saw a swap
+		for (int j = 0; swappedLast && j < n; j ++){
+			index = 0;
+
+			for (int i = 1; i < n - j + 1; i++){	// find biggest int
+				if (list[i] > list[index]){
+					index = i;
+				}	// end if
+				compCount++;	// increment # of compares
+			}	//	end for
+
+			int biggest = list[index];
+			int toSwitch = list[n - j];
+
+			if (biggest != toSwitch){
+				list[n - j] = biggest;				// put biggest at end
+				list[index] = toSwitch;
+				swapCount++;	// increment # of swaps
+				swappedLast = true;
+			}	// end if
+			else{
+				swappedLast = false;
+			}	// end else
+		}	// end for		
+		
+		for (int i = 0; i <= n; i ++){	// transfer list into sorted
+			sorted[i] = list[i];
+		}	// end for
+		sorted[sorted.length - 2] = compCount;	// number of comparisons
+		sorted[sorted.length - 1] = swapCount;	// number of swaps
+
+
+		return sorted;
+	}	// end select
+	
+	// #5
+	private static int[] insert(int[] list){
+		int n = list.length - 1;
+		int[] sorted = new int[n + 3];	// two longer than input array
+		int compCount = 0;	// number of compares to sort
+		int swapCount = 0;	// number of swaps
+		
+		int end = n;			// where the earliest item is stored
+		sorted[n] = list[0];	// first item in list goes into sorted
+		int next;
+		for (int j = 1; j <= n; j ++){
+			next = list[j];		// load next with next int from list
+			
+			boolean placed = false;
+			for (int i = 0; !placed && end + i <= n; i++){
+				if (next > sorted[end + i]){		// if next is bigger, shift other down
+					sorted[end - 1 + i] = sorted[end + i];
+				}	// end if
+				else {
+					sorted[--end + i] = next;		// if next no bigger, put it before other
+					placed = true;
+					swapCount++;
+				}	// end else
+				
+				compCount++;
+			}	// end for
+			if (!placed){
+				sorted[n] = next;
+				placed = true;
+				end--;
+			}	// end if
+		}	// end for
+		
+		
+		sorted[sorted.length - 2] = compCount;	// number of comparisons
+		sorted[sorted.length - 1] = swapCount;	// number of swaps
+
+
+		return sorted;
+	}	// end insert
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}	// end Class

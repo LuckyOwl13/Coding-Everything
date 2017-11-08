@@ -1,0 +1,30 @@
+try(BufferedReader br = new BufferedReader(new FileReader(fileName))){	// try-catch in case file not found
+																				// or some other IO Error somewhere.
+			for(int i = 0;i < headerCount;i++){		// skip header lines without info 
+				br.readLine();	// reads but does nothing with the next line in the file
+			}	// end for
+
+			String line = "";	// string within each line in turn will be placed
+			while ((line = br.readLine()) != null) {	// while there are still more lines to read in file
+				
+				// Count how many entries are in the spreadsheet
+				entryCount++;
+				
+				// CSV uses comma as separator, spilt line input on ','
+				String[] p = line.split(",");
+
+				// instantiate and add to the DataSet a StateStatistic made from the input from file
+				Person peep = PersonFactory.buildPerson(p);
+				data.getStats().add(peep);
+				
+				if(numTraits <= 0) numTraits = p.length;	// sets numTraits to the correct value 
+															// if it hasn't been already
+			}	// end while
+			System.out.println(entryCount + " entries found");	// prints 
+		}	// end try
+		catch (FileNotFoundException e){
+			System.err.println("Couldn't find file @: " + fileName);
+		}	// end catch
+		catch (IOException e){
+			System.err.println("Something IO broke");
+		}	// end try-catch

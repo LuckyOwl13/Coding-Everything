@@ -1,0 +1,1234 @@
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has no registered students.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: John
+	Enter the last name: Smith
+	Enter the SSN: 123456789
+	Enter the birth day: 12
+	Enter the birth month: February 
+	Enter the birth year: 1996
+	Enter the number of credits: 60
+	Enter the major: CS
+	Enter the minor: Math
+The student John Smith has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Jane
+	Enter the last name: Doe
+	Enter the SSN: 186509376
+	Enter the birth day: 9
+	Enter the birth month: September
+	Enter the birth year: 1994
+	Enter the number of credits: 23
+	Enter the major: CS
+	Enter the minor: Physics
+The student Jane Doe has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 2 registered students:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Joe
+	Enter the last name: Student
+	Enter the SSN: 947385911
+	Enter the birth day: 13
+	Enter the birth month: July
+	Enter the birth year: 1980
+	Enter the number of credits: 20
+	Enter the major: Math
+	Enter the minor: CS
+The student Joe Student has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Joe
+	Enter the last name: Doe
+	Enter the SSN: 917464561
+	Enter the birth day: 23
+	Enter the birth month: June
+	Enter the birth year: 1995
+	Enter the number of credits: 58
+	Enter the major: Math
+	Enter the minor: CS
+The student Joe Doe has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Jimmy
+	Enter the last name: Doe
+	Enter the SSN: 759002681
+	Enter the birth day: 30
+	Enter the birth month: May
+	Enter the birth year: 1985
+	Enter the number of credits: 12
+	Enter the major: English
+	Enter the minor: NONE
+The student Jimmy Doe has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: George
+	Enter the last name: Doey
+	Enter the SSN: 956382716
+	Enter the birth day: 4
+	Enter the birth month: December
+	Enter the birth year: 1995
+	Enter the number of credits: 130
+	Enter the major: Chemistry
+	Enter the minor: Math
+The student George Doey has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Lola
+	Enter the last name: Lolisimma
+	Enter the SSN: 378267411
+	Enter the birth day: 31
+	Enter the birth month: August
+	Enter the birth year: 1996
+	Enter the number of credits: 110
+	Enter the major: Biology
+	Enter the minor: NONE
+The student Lola Lolisimma has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: New
+	Enter the last name: Student
+	Enter the SSN: 467726661
+	Enter the birth day: 21
+	Enter the birth month: February
+	Enter the birth year: 1997
+	Enter the number of credits: 80
+	Enter the major: CS
+	Enter the minor: Chemistry
+The student New Student has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Johnny
+	Enter the last name: Drake
+	Enter the SSN: 847760167
+	Enter the birth day: 1
+	Enter the birth month: January
+	Enter the birth year: 1997
+	Enter the number of credits: 66
+	Enter the major: Math
+	Enter the minor: CS
+The student Johnny Drake has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Jinny
+	Enter the last name: Jones
+	Enter the SSN: 378279001
+	Enter the birth day: 8
+	Enter the birth month: February
+	Enter the birth year: 1994
+	Enter the number of credits: 48
+	Enter the major: Business
+	Enter the minor: NONE
+The student Jinny Jones has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Ana
+	Enter the last name: Mory
+	Enter the SSN: 273691638
+	Enter the birth day: 16
+	Enter the birth month: October
+	Enter the birth year: 1994
+	Enter the number of credits: 30
+	Enter the major: Exploratory
+	Enter the minor: NONE
+The student Ana Mory has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) freshman
+Here are the freshman student(s) in the ClassRoster:
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+Jimmy Doe: 
+ SSN 759002681
+ birthday May 30 1985
+ credits earned 12
+ major English
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) sophomore
+Here are the sophomore student(s) in the ClassRoster:
+Joe Doe: 
+ SSN 917464561
+ birthday June 23 1995
+ credits earned 58
+ major Math
+ minor CS
+ 
+Jinny Jones: 
+ SSN 378279001
+ birthday February 8 1994
+ credits earned 48
+ major Business
+ minor NONE
+ 
+Ana Mory: 
+ SSN 273691638
+ birthday October 16 1994
+ credits earned 30
+ major Exploratory
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) junior
+Here are the junior student(s) in the ClassRoster:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) senior
+Here are the senior student(s) in the ClassRoster:
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 11 registered students:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+Joe Doe: 
+ SSN 917464561
+ birthday June 23 1995
+ credits earned 58
+ major Math
+ minor CS
+ 
+Jimmy Doe: 
+ SSN 759002681
+ birthday May 30 1985
+ credits earned 12
+ major English
+ minor NONE
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+Jinny Jones: 
+ SSN 378279001
+ birthday February 8 1994
+ credits earned 48
+ major Business
+ minor NONE
+ 
+Ana Mory: 
+ SSN 273691638
+ birthday October 16 1994
+ credits earned 30
+ major Exploratory
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 4
+	Enter last name of the student to search for: Doe
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Doe: 
+ SSN 917464561
+ birthday June 23 1995
+ credits earned 58
+ major Math
+ minor CS
+ 
+Jimmy Doe: 
+ SSN 759002681
+ birthday May 30 1985
+ credits earned 12
+ major English
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 4
+	Enter last name of the student to search for: Smith
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 2
+You are now deleting a student from your ClassRoster.
+	Enter last name of the student to delete : Doe
+Do you want to delete Jane Doe for the ClassRoster(Y/N)?
+N
+Do you want to delete Joe Doe for the ClassRoster(Y/N)?
+Y
+The student Joe Doe has been deleted.
+Do you want to delete Jimmy Doe for the ClassRoster(Y/N)?
+Y
+The student Jimmy Doe has been deleted.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 9 registered students:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+Jinny Jones: 
+ SSN 378279001
+ birthday February 8 1994
+ credits earned 48
+ major Business
+ minor NONE
+ 
+Ana Mory: 
+ SSN 273691638
+ birthday October 16 1994
+ credits earned 30
+ major Exploratory
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) sophomore
+Here are the sophomore student(s) in the ClassRoster:
+Jinny Jones: 
+ SSN 378279001
+ birthday February 8 1994
+ credits earned 48
+ major Business
+ minor NONE
+ 
+Ana Mory: 
+ SSN 273691638
+ birthday October 16 1994
+ credits earned 30
+ major Exploratory
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) freshman
+Here are the freshman student(s) in the ClassRoster:
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 4
+	Enter last name of the student to search for: Doe
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 2
+You are now deleting a student from your ClassRoster.
+	Enter last name of the student to delete : Mory
+Do you want to delete Ana Mory for the ClassRoster(Y/N)?
+Y
+The student Ana Mory has been deleted.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 8 registered students:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+Jinny Jones: 
+ SSN 378279001
+ birthday February 8 1994
+ credits earned 48
+ major Business
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 2
+You are now deleting a student from your ClassRoster.
+	Enter last name of the student to delete : Jones
+Do you want to delete Jinny Jones for the ClassRoster(Y/N)?
+Y
+The student Jinny Jones has been deleted.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 7 registered students:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) sophomore
+There is no sophomore student in the ClassRoster.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) freshman
+Here are the freshman student(s) in the ClassRoster:
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) senior
+Here are the senior student(s) in the ClassRoster:
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 1
+You are now adding a new student to your ClassRoster.
+	Enter the first name: Luis
+	Enter the last name: Lano
+	Enter the SSN: 195639258
+	Enter the birth day: 22
+	Enter the birth month: May
+	Enter the birth year: 1985
+	Enter the number of credits: 83
+	Enter the major: CS
+	Enter the minor: Biology
+The student Luis Lano has been registered!
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 8 registered students:
+John Smith: 
+ SSN 123456789
+ birthday February  12 1996
+ credits earned 60
+ major CS
+ minor Math
+ 
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+Luis Lano: 
+ SSN 195639258
+ birthday May 22 1985
+ credits earned 83
+ major CS
+ minor Biology
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 2
+You are now deleting a student from your ClassRoster.
+	Enter last name of the student to delete : Smith
+Do you want to delete John Smith for the ClassRoster(Y/N)?
+Y
+The student John Smith has been deleted.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 7 registered students:
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+Luis Lano: 
+ SSN 195639258
+ birthday May 22 1985
+ credits earned 83
+ major CS
+ minor Biology
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 2
+You are now deleting a student from your ClassRoster.
+	Enter last name of the student to delete : Lano
+Do you want to delete Luis Lano for the ClassRoster(Y/N)?
+Y
+The student Luis Lano has been deleted.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 3
+
+	Your ClassRoster has the following 6 registered students:
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 4
+	Enter last name of the student to search for: Lano
+There is no students whose last name is Lano.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 4
+	Enter last name of the student to search for: Smith
+There is no students whose last name is Smith.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) freshman
+Here are the freshman student(s) in the ClassRoster:
+Jane Doe: 
+ SSN 186509376
+ birthday September 9 1994
+ credits earned 23
+ major CS
+ minor Physics
+ 
+Joe Student: 
+ SSN 947385911
+ birthday July 13 1980
+ credits earned 20
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) sophomore
+There is no sophomore student in the ClassRoster.
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) junior
+Here are the junior student(s) in the ClassRoster:
+New Student: 
+ SSN 467726661
+ birthday February 21 1997
+ credits earned 80
+ major CS
+ minor Chemistry
+ 
+Johnny Drake: 
+ SSN 847760167
+ birthday January 1 1997
+ credits earned 66
+ major Math
+ minor CS
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 5
+	Enter level to display:(freshman/sophomore/junior/senior) senior
+Here are the senior student(s) in the ClassRoster:
+George Doey: 
+ SSN 956382716
+ birthday December 4 1995
+ credits earned 130
+ major Chemistry
+ minor Math
+ 
+Lola Lolisimma: 
+ SSN 378267411
+ birthday August 31 1996
+ credits earned 110
+ major Biology
+ minor NONE
+ 
+
+Select from the following menu: 
+	0. Exit the application
+	1. Add a student.
+	2. Delete a student.
+	3. Print content of ClassRoster.
+	4. Search ClassRoster for student(s).
+	5. Display students by level.
+Make your menu selection now: 0

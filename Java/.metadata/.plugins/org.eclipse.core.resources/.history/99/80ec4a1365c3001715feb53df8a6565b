@@ -1,0 +1,81 @@
+package controller;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import model.DataSet;
+import model.Person;
+/**
+ * Driver for the program.
+ * @author Caitlin McElwee ☼
+ * @date Jul 19, 2016
+ */
+public class Driver {
+	/** DataSet to be used by the driver. **/
+	private static DataSet data;
+	/** Name of the file to be used. **/
+	private static String fileName;
+	/** number of traits for each entry. **/
+	private static int traitCount;
+
+	/**
+	 * Main method for program.
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		data = new DataSet();	// Instance of DataSet to be used by the driver
+		fileName = "C:/Users/Caitlin/Desktop/Coding Everything/Java/SpreadSheetMaker/OurAverage.csv"; // Name of file used by the program
+		
+		traitCount = loadStatistics(data,fileName,3);	// load the file into the dataset, 
+														// instantiate traitCount to correct value.
+		
+		new TopGUIController(data, fileName, traitCount);	// instantiate the TopGUIController
+	}	// end main
+	
+	/**
+	 * Loads the data into the dataset.
+	 * @param data the dataset all data are put into.
+	 * @param fileName name of the file containing the data.
+	 * @param headerCount the number of header lines the file contains.
+	 * @return Number of traits each entry has.
+	 */
+	public static int loadStatistics(DataSet data,String fileName,int headerCount){
+		
+		int entryCount = 0;	// declare and initialize the counter for # of entries
+		int numTraits = -1;	// declare and initialize the counter for # of traits, starting as a value known
+							// to be impossible so it will be noticed if there is an error somewhere
+		
+		try(BufferedReader br = new BufferedReader(new FileReader(fileName))){	// try-catch in case file not found
+																				// or some other IO Error somewhere.
+			for(int i = 0;i < headerCount;i++){		// skip header lines without info 
+				br.readLine();	// reads but does nothing with the next line in the file
+			}	// end for
+
+			String line = "";	// string within each line in turn will be placed
+			while ((line = br.readLine()) != null) {	// while there are still more lines to read in file
+				
+				// Count how many entries are in the spreadsheet
+				entryCount++;
+				
+				// CSV uses comma as separator, spilt line input on ','
+				String[] p = line.split(",");
+
+				// instantiate and add to the DataSet a StateStatistic made from the input from file
+				Person peep = PersonFactory.buildPerson(p);
+				data.getStats().add(peep);
+				
+				if(numTraits <= 0) numTraits = p.length;	// sets numTraits to the correct value 
+															// if it hasn't been already
+			}	// end while
+			System.out.println(entryCount + " entries found");	// prints 
+		}	// end try
+		catch (FileNotFoundException e){
+			System.err.println("Couldn't find file @: " + fileName);
+		}	// end catch
+		catch (IOException e){
+			System.err.println("Something IO broke");
+		}	// end try-catch
+		return numTraits;
+	}	// end loadStatistics
+}	// end Class

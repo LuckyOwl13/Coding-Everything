@@ -1,0 +1,706 @@
+Welcome to the Shopping Center!!!
+Please specify stock.
+ How many items do you have?7
+Please specify restocking amount:3
+>>Enter item name : soup
+How many soups? 5
+5 items of soup have been placed in stock.
+>>Enter item name : bread
+How many breads? 7
+7 items of bread have been placed in stock.
+>>Enter item name : mac
+How many macs? 9
+9 items of mac have been placed in stock.
+>>Enter item name : water
+How many waters? 10
+10 items of water have been placed in stock.
+>>Enter item name : juice
+How many juices? 4
+4 items of juice have been placed in stock.
+>>Enter item name : soap
+How many soaps? 3
+3 items of soap have been placed in stock.
+>>Enter item name : banana
+How many bananas? 15
+15 items of banana have been placed in stock.
+Please select the checkout line that should check out customers first (regular1/regular2/express): 
+express
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+No one is in the Shopping Center!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 3
+
+No one is in the Shopping Center!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 4
+
+No customers in the Shopping Center!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 5
+
+There are no customers in any lines!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 6
+
+There are no customers in the Shopping Center!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 7
+
+There are no customers in checkout line 1!
+There are no customers in checkout line 2!
+There are no customers in the express line!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 8
+
+Items at re-stocking level:
+soap with 3 items.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 1
+
+Enter customer name: Beckett
+Customer Beckett is now in the Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 1
+
+Enter customer name: Emma
+Customer Emma is now in the Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+>>Enter customer name : Emma
+>>What item does Emma want? soup
+Customer Emma now has 1 items in the shopping cart.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+>>Enter customer name : Emma
+>>What item does Emma want? mac
+Customer Emma now has 2 items in the shopping cart.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 1
+
+Enter customer name: Rory
+Customer Rory is now in the Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 3
+
+>>Enter customer name : Beckett
+Customer Beckett now has -1 items in the shopping cart
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+>>Enter customer name : Beckett
+>>What item does Beckett want? sopa
+No sopas in Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+>>Enter customer name : Beckett
+>>What item does Beckett want? soup
+Customer Beckett now has 0 items in the shopping cart.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 1
+
+Enter customer name: Jeff
+Customer Jeff is now in the Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 4
+
+After 4 minutes in the Shopping Center customer Emma with 2 items is now in the express line.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 4
+
+Should customer Beckett checkout or continue shopping? Checkout? (Y/N): 4
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 1
+
+Enter customer name: Matthew
+Customer Matthew is now in the Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+>>Enter customer name : Matthew
+>>What item does Matthew want? bread
+Customer Matthew now has 1 items in the shopping cart.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 2
+
+>>Enter customer name : Jeff
+>>What item does Jeff want? juice
+Customer Jeff now has 1 items in the shopping cart.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 6
+
+The following 3 customers are in the Shopping Center: 
+Customer Jeff with 1 items present for 2 minutes.
+Customer Matthew with 1 items present for 2 minutes.
+Customer Rory with 0 items present for 4 minutes.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 7
+
+There are no customers in checkout line 1!
+There are no customers in checkout line 2!
+The following customer(s) are in the express line:
+Customer Emma has 2 items in the shopping basket. 
+
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 8
+
+Items at re-stocking level:
+juice with 3 items.
+soap with 3 items.
+soup with 3 items.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 9
+
+>>Enter item name to be re-ordered : bread
+Enter number of breads to be re-ordered : 100
+Stock now has 106 breads.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 5
+
+Should customer Emma leave or keep on shopping? Leave? (Y/N): Y
+Customer Emma is now leaving the Shopping Center.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 5
+
+There are no customers in any lines!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 6
+
+The following 3 customers are in the Shopping Center: 
+Customer Jeff with 1 items present for 2 minutes.
+Customer Matthew with 1 items present for 2 minutes.
+Customer Rory with 0 items present for 4 minutes.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 7
+
+There are no customers in checkout line 1!
+There are no customers in checkout line 2!
+There are no customers in the express line!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 8
+
+Items at re-stocking level:
+juice with 3 items.
+soap with 3 items.
+soup with 3 items.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 4
+
+Should customer Rory checkout or continue shopping? Checkout? (Y/N): 2
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: -1
+
+Error, please use valid input
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 6
+
+The following 2 customers are in the Shopping Center: 
+Customer Jeff with 1 items present for 2 minutes.
+Customer Matthew with 1 items present for 2 minutes.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 7
+
+There are no customers in checkout line 1!
+There are no customers in checkout line 2!
+There are no customers in the express line!
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 8
+
+Items at re-stocking level:
+juice with 3 items.
+soap with 3 items.
+soup with 3 items.
+
+Select from the following menu:
+	1. Customer enters Shopping Center.
+	2. Customer picks an item and places it the shopping cart.
+	3. Customer removes an item from the shopping cart.
+	4. Customer is done shopping.
+	5. Customer checks out.
+	6.  Print info about customers who are shopping.
+	7.  Print info about customers in checkout lines.
+	8.  Print info about items at or below re-stocking level.
+	9.  Reorder an item.
+	10. Close the Shopping Center.
+Make you menu selection now: 10
+
+	Exiting program...Good Bye

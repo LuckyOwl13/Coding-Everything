@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1505620624735_1" label="DSA" name="DSA">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Lab1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Lab7" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Stacks" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Doubly Linked Lists" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Hashes" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Pairwise Sorts" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Binary Search Trees" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Linked Lists" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Lists" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Project v2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Searcher" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Merge, Quick Sort" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Queues" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DSA Assignment1" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509903534177_3" label="OOPDA" name="OOPDA">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/AbstractDataTypesLab" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Friday Party Time" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Foxes and Rabbits" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SwingPlaying" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Zodiac" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Della Bagles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Medicine Comparer" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RabFox" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RegistrarLab" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Notebook" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PrintAllOrders" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CySecFun" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Counting Vowels" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HorseBurros" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/UniversityLab" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1505619796081_0" label="Window Working Set" name="Aggregate for window 1505619796080"/>
+<mruList name="DSA"/>
+</workingSetManager>

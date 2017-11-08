@@ -1,0 +1,18 @@
+
+
+public class Driver {
+	public static void main(String[] args) {
+		fileName = "C:/Users/Keenan/workspace/SpreadSheetMaker/OurAverage.csv"; // Name of file used by the program
+
+		String[] data = fillData(data);	// instantiate an array of 
+		
+		new TopGUIController(data, fileName, traitCount);	// instantiate the TopGUIController
+	}	// end main
+
+	
+	
+	private static String[] fillData(String[] data) {
+		// TODO Auto-generated method stub
+		return null;
+	}	// end fillData
+}	// end Driver

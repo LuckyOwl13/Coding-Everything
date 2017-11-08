@@ -1,0 +1,289 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Driver {
+	/** Reader used to receive input**/
+	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		//		int[] test = new int[] {-11,-6,2,3,5,27,45};	// best
+//				int[] test = new int[] {45,27,5,3,2,-6,-11,-345,233,2345,25645,32423,233,67,-9};	// worst
+//				int[] test = new int[] {5,2,27,45,-11,-6,3};	// random
+
+		printMenu();
+//
+//				int[] result = mergeSort(test);
+//				for (int i : result){
+//					System.out.print(i + "  ");
+//				}
+
+
+	}	// end main
+
+	private static void printMenu() throws NumberFormatException, IOException{
+		boolean endNow = false;
+		do{			
+			System.out.print("\nSelect from the following menu:"
+					+ "\n\t1. Iterative MergeSort."
+					+ "\n\t2. Resursive QuickSort."
+					+ "\n\t3. Exit program."
+					+ "\nMake you menu selection now: ");
+
+			int select = Integer.parseInt(br.readLine().trim());
+			System.out.println(select);
+
+			switch (select){
+			case 1: System.out.println("Merge Sort");
+			break;
+			case 2: System.out.println("Quick Sort");
+			break;
+			case 3: System.out.println("Exitting now... Goodbye");
+					endNow = true;
+				break;
+			default: System.out.println("Error, please use valid input");
+			break;
+			}
+
+			if (select >= 1 && select <= 2){
+				System.out.print("Enter number of integers: ");
+				int numInt = Integer.parseInt(br.readLine());
+				System.out.println(numInt);
+
+				int[] list = new int[numInt];			// make array to hold input
+
+				for (int i = 0; i < numInt; i++){		// load up new array
+					System.out.printf("Enter integer number %s: ",i + 1);
+					list[i] = Integer.parseInt(br.readLine());
+					System.out.println(list[i]);
+				}	// end for
+
+				System.out.println("Input data:");
+				for (int i : list){
+					System.out.print(i + "   ");
+				}
+
+				System.out.println("\nSorted data:");
+
+				int[] results = new int[numInt];
+
+				switch (select){
+				case 1: results = mergeSort(list);
+					break;
+				case 2: results = quickSort(list);
+					break;
+				}	// end switch
+
+
+				for (int i = 0; i < numInt; i++){		// load up new array
+					System.out.print(results[i] + "   ");
+				}	// end for
+				System.out.println("\nNumber of comparisons: " + results[numInt]);
+			}	// end if
+
+		} while (!endNow);	// end do-while
+
+		System.exit(0);
+	}	// end printMenu
+
+	
+	private static int[] mergeSort(int[] list) {
+		int maxIndex = list.length - 1;
+		for (int size = 1; size <= maxIndex;){			// size is how many items are in each "subarray"
+			for (int j = 0; j < maxIndex/size; j += 2){	// j is which subarray is being used (s0, s1...)
+				
+				int[] first = new int[size];	// array for the first subarray
+				int[] second = new int[size];	// array for the second subarray
+				int secondEnd = Integer.MAX_VALUE;	// catcher to prevent ArrayIndexOutOfBoundsExceptions
+				try{
+				for (int i = 0; i < size; i++){	// fill first with appropriate values
+					first[i] = list[i + j*size];
+				}	// end for
+				for (int i = size; i < size*2; i++){// fill second with appropriate values
+					secondEnd = i - size + 1;
+					second[i - size] = list[i + j*size];
+				}	// end for
+				secondEnd = Integer.MAX_VALUE;	// reset catcher
+				} catch (ArrayIndexOutOfBoundsException e){	// try-catch so that can handle arrays of not powers of 2
+					secondEnd -= 2;					
+				};	// end try-catch
+				
+				int fir = 0;	// respective indexes for first and second 
+				int sec = 0;
+				
+				do{		// compare values at indexes, slowly add them in
+					if (first[fir] < second[sec]){
+						list[fir + sec + j*size] = first[fir];	// first's value smaller, sorted first
+						fir++;	// move to next item in first
+					}	// end if
+					else{
+						list[fir + sec + j*size] = second[sec];	// second's value smaller, sorted first
+						++sec;	// move to next item in second
+						if (sec > secondEnd){
+							sec = second.length;
+						}	// end if
+					}	// end else
+					
+				} while (fir < first.length && sec < second.length);	// end do-while
+				
+				if (sec >= secondEnd){	// if secondEnd was used
+					sec = secondEnd + 1;				// return sec to what it should be
+				}	// end if
+				
+				while (fir < first.length){		// load any extras still in first back into list
+					list[fir + sec + j*size] = first[fir];	// first's value smaller, sorted first
+					fir++;	// move to next item in first
+				}	// end while
+				while (sec < second.length && secondEnd == Integer.MAX_VALUE){	// load any extras still in second back into list
+					list[fir + sec + j*size] = second[sec];	// second's value smaller, sorted first
+					sec++;	// move to next item in second
+				}	// end while
+			}	// end for
+			
+			size *= 2;	// merge arrays together
+		}	// end for
+		
+		return list;
+	}	// end mergeSort
+
+
+
+	private static int[] quickSort(int[] list) {
+		int n = list.length - 1;
+		int [] sorted = new int[n + 2];	// bigger than list so can fit comparison count
+		int p; 			// value used for partition
+		int compCount = 0;	// number of compares to sort
+		int low = 1;			// mark the last index in the <p or >p sets, respectively
+		
+		
+		if (list.length >= 3){
+			int first = list[0];	// first item in collection
+			int last = list[n];	// last item in collection 
+			int middle = list[n/2];	// middle item in collection
+			
+			// increments the count of comparisons for each comparison, has to do it twice
+			// for every part of both if statements that is evaluated. Looks great don't it
+			if (middle > first && first > last) {
+				p = first;	// first is the median
+				compCount += 2; // compared 2 times to get here
+			}
+			else if (last > first && first > middle){
+				p = first;	// first is the median
+				compCount += 4; // compared 4 times to get here
+			}	// end if
+			else if (first > last && last > middle){
+				p = last;	// last is the median
+				list[n] = list[0];
+				list[0] = p;
+				compCount += 6; // compared 6 times to get here
+			}
+			else if (middle > last && last > first){
+				p = last;	// last is the median
+				list[n] = list[0];
+				list[0] = p;
+				compCount += 8; // compared 8 times to get here
+			}	// end else-if
+			else {
+				p = middle;	// middle is the median
+				list[n/2] = list[0];
+				list[0] = p;
+				compCount += 8;	// compared 8 times to get here
+			}	// end else
+			
+			// moving on to partitioning 
+			for (int i = 1; i <= n; i++){
+				if (list[i] < p){
+					int temp = list[low];	// swap current with first greater item
+					list[low] = list[i];
+					list[i] = temp;
+					low++;
+				}	// end if
+				compCount++;
+			}	// end for
+			
+			list[0] = list[low - 1];	// swap last <p item with p
+			list[low - 1] = p;
+			
+			int[] lower = new int[low - 1];						// initialize array to pass for <p
+			int[] higher = new int[list.length - low];	// initialize array to pass for >p
+			
+			for (int i = 0; i < low - 1; i++){	// fill lower with appropriate values
+				lower[i] = list[i];
+			}	// end for
+			for (int i = low; i <= n; i++){	// fill higher with appropriate values
+				higher[i - low] = list[i];
+			}	// end for
+			
+			lower = quickSort(lower);	// recursively sort <p
+			higher = quickSort(higher);	// recursively sort <p
+			
+			for (int i = 0; i < lower.length - 1; i++){		// insert sorted <p values to appropriate spots
+				list[i] = lower[i];
+			}	// end for
+			for (int i = 0; i < higher.length - 1; i++){	// insert sorted >p values to appropriate spots
+				list[i + low] = higher[i];
+			}	// end for
+			
+			compCount += lower[lower.length - 1];	// add deeper-level comparison counts to running count
+			compCount += higher[higher.length - 1];			
+			
+		}	// end if
+		else {	// base case, <= 2 items in group
+			if (list.length > 1 && list[0] > list[1]){
+				int temp = list[0];
+				list[0] = list[1];
+				list[1] = temp;
+			}
+			compCount++;
+		}	// end else, base case
+		
+		
+		for (int i = 0; i <= n; i ++){				// transfer list into sorted
+			sorted[i] = list[i];
+		}	// end for
+		sorted[sorted.length - 1] = compCount;	// number of comparisons
+		
+		return sorted;		
+	}	// end quickSort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}	// end Driver

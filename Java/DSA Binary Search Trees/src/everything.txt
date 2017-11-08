@@ -1,0 +1,1213 @@
+/*
+ * Purpose: Data Structure and Algorithms Lab 11
+ * Status: Complete and thoroughly tested
+ * Last update: 11/29/16
+ * Submitted:  11/30/16
+ * Comment: test suite and sample run attached
+ * @author: Caitlin McElwee
+ * @version: 2016.11.029
+ */
+::::::::::::::
+Driver.java
+::::::::::::::
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Driver {
+    /** Reader used to receive input**/
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    public static void main(String[] args) throws NumberFormatException, IOException {
+        boolean canEndProgram = true;
+
+        MyBinarySearchTreePlus<Data,String> tree = new MyBinarySearchTreePlus<Data,String>();
+
+        printMenu(tree,canEndProgram);
+    }	// end main
+
+    private static void printMenu(MyBinarySearchTreePlus<Data, String> tree, boolean canEndProgram) throws NumberFormatException, IOException {
+        boolean endNow = false;
+        do {
+            System.out.print("\nSelect from the following menu:"
+                             + "\n\t1. Insert key in BST."
+                             + "\n\t2. Delete key from BST."
+                             + "\n\t3. Search for key in BST."
+                             + "\n\t4. Display height of BST"
+                             + "\n\t5. Display size of BST."
+                             + "\n\t6. Display content of BST in inorder."
+                             + "\n\t7. Display content of BST in preorder."
+                             + "\n\t8. Display content of BST in postorder."
+                             + "\n\t9. Build copy of the tree, and test it."
+                             + "\n\t10. Exit program."
+                             + "\nMake you menu selection now: ");
+
+            String select = br.readLine().trim();
+            System.out.println(select);
+
+            switch (select) {
+            case "1":
+                insertKey(tree);
+                break;
+            case "2":
+                deleteKey(tree);
+                break;
+            case "3":
+                searchKey(tree);
+                break;
+            case "4":
+                displayHeight(tree);
+                break;
+            case "5":
+                displaySize(tree);
+                break;
+            case "6":
+                displayInOrder(tree);
+                break;
+            case "7":
+                displayPreOrder(tree);
+                break;
+            case "8":
+                displayPostOrder(tree);
+                break;
+            case "9":
+                buildCopy(tree);
+                break;
+            case "10":
+                if (!canEndProgram) System.out.println("Back to original tree");
+                endNow = true;
+                break;
+            default:
+                System.out.println("Error, please use valid input");
+                break;
+            }
+
+        } while (!endNow);	// end do-while
+
+        if (canEndProgram) {
+            System.out.println("Exitting now... Goodbye");
+            System.exit(0);
+        }	// end if (canEndProgram)
+    }	// end printMenu
+
+    // #1
+    private static void insertKey(MyBinarySearchTreePlus<Data, String> tree) throws IOException {
+        System.out.print("You are now inserting an item into the tree."
+                         + "\n\tEnter Item: ");
+        String item = br.readLine();
+        System.out.println(item);
+
+        tree.insert(new Data(item));
+        System.out.println("\nItem " + item + " inserted into the tree.");
+    }	// end insertKey
+
+    // #2
+    private static void deleteKey(MyBinarySearchTreePlus<Data, String> tree) throws IOException {
+        if (!tree.isEmpty()) {
+            System.out.print("You are now removing an item from the tree."
+                             + "\n\tEnter Item: ");
+            String item = br.readLine();
+            System.out.println(item);
+
+            tree.delete(item);
+            System.out.println("\nItem " + item + " removed from the tree.");
+        }	// end if (!tree.isEmpty())
+        else {
+            System.out.println("Tree is empty, cannot delete!");
+        }	// end else (!tree.isEmpty())
+    }	// end deleteKey
+
+    // #3
+    private static void searchKey(MyBinarySearchTreePlus<Data, String> tree) throws IOException {
+        if (!tree.isEmpty()) {
+            System.out.print("You are now removing an item from the tree."
+                             + "\n\tEnter Item: ");
+            String item = br.readLine();
+            System.out.println(item);
+
+
+            Data retrieved = tree.retrieve(item);
+
+            if (retrieved != null) System.out.println("\nItem '" + retrieved.getKey() + "' retrieved from the tree.");
+            else System.out.println("No such item found.");
+        }	// end if (!tree.isEmpty())
+        else {
+            System.out.println("Tree is empty, cannot search!");
+        }	// end else (!tree.isEmpty())
+    }	// end searchKey
+
+    // #4
+    private static void displayHeight(MyBinarySearchTreePlus<Data, String> tree) {
+        System.out.println("Tree is " + tree.getHeight() + " nodes tall at its tallest.");
+    }	// end displayHeight
+
+    // #5
+    private static void displaySize(MyBinarySearchTreePlus<Data, String> tree) {
+        System.out.println("Tree has " + tree.getSize() + " nodes in it.");
+    }	// end displaySize
+
+    // #6
+    private static void displayInOrder(MyBinarySearchTreePlus<Data, String> tree) {
+        System.out.println("The tree, inOrdered, goes as follows: " + tree.toStringInorder());
+    }	// end displayInOrder
+
+    // #7
+    private static void displayPreOrder(MyBinarySearchTreePlus<Data, String> tree) {
+        System.out.println("The tree, preOrdered, goes as follows: " + tree.toStringPreorder());
+    }	// end displayPreOrder
+
+    // #8
+    private static void displayPostOrder(MyBinarySearchTreePlus<Data, String> tree) {
+        System.out.println("The tree, postOrdered, goes as follows: " + tree.toStringPostorder());
+    }	// end displayPostOrder
+
+    // #9
+    private static void buildCopy(MyBinarySearchTreePlus<Data, String> tree) throws NumberFormatException, IOException {
+        if (!tree.isEmpty()) {
+            MyBinarySearchTreePlus<Data, String> copyTree = tree.getCopyOfTree();
+
+            System.out.println("Tree copied, test copy now. 'End program' when you want to go back to the original.");
+
+            printMenu(copyTree, false);
+        }	// end if (!tree.isEmpty())
+        else {
+            System.out.println("Tree is empty, cannot copy!");
+        }	// end else (!tree.isEmpty())
+    }	// end buildCopy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+::::::::::::::
+MyBinarySearchTree.java
+::::::::::::::
+public class MyBinarySearchTree<T extends KeyedItem<KT>,
+    KT extends Comparable<? super KT>>
+    extends BinaryTreeBasis<T> {
+    // inherits isEmpty(), makeEmpty(), getRootItem(), and
+    // the use of the constructors from BinaryTreeBasis
+
+    public MyBinarySearchTree() {
+    }  // end default constructor
+
+    public MyBinarySearchTree(T rootItem) {
+        super(rootItem);
+    }  // end constructor
+
+    public void setRootItem(T newItem)
+    throws UnsupportedOperationException {
+        throw new UnsupportedOperationException();
+    }  // end setRootItem
+
+    public void insert(T newItem) {
+        root = insertItem(root, newItem);
+    }  // end insert
+
+    public T retrieve(KT searchKey) {
+        T treeItem = null;
+        TreeNode<T> tNode;
+        T nodeItem;
+        boolean found = false;
+
+        if (!isEmpty()) {
+            tNode = root;
+            while (!found) {
+                nodeItem = tNode.getItem();
+
+                if (searchKey.compareTo(nodeItem.getKey()) == 0) {	// if found sought-for item
+                    treeItem = nodeItem;
+                    found = true;
+                }	// end if
+                else if (tNode.getLeftChild() == null && tNode.getRightChild() == null) {	// not found,
+                    found = true;													// end of tree
+                }	// end else-if
+                else if (searchKey.compareTo(nodeItem.getKey()) < 0) {	// search the left subtree
+                    tNode = tNode.getLeftChild();
+                }	// end else-if
+                else {										// search the right subtree
+                    tNode = tNode.getRightChild();
+                }  // end else
+
+            }	// end while
+        }	// end if
+
+        return treeItem;
+    }  // end retrieve
+
+    public void delete(KT searchKey) throws TreeException {
+        root = deleteItem(root, searchKey);
+    }  // end delete
+
+    public void delete(T item) throws TreeException {
+        root = deleteItem(root, item.getKey());
+    }  // end delete
+
+    protected TreeNode<T> insertItem(TreeNode<T> tNode, T newItem) {
+        TreeNode<T> newSubtree;
+        if (tNode == null) {
+            // position of insertion found; insert after leaf
+            // create a new node
+            tNode = new TreeNode<T>(newItem, null, null);
+            return tNode;
+        }  // end if
+        T nodeItem = tNode.getItem();
+
+        // search for the insertion position
+
+        if (newItem.getKey().compareTo(nodeItem.getKey()) < 0) {
+            // search the left subtree
+            newSubtree = insertItem(tNode.getLeftChild(), newItem);
+            tNode.setLeftChild(newSubtree);
+            return tNode;
+        }
+        else if (newItem.getKey().compareTo(nodeItem.getKey()) < 0) {	// key already exists
+            System.out.println("Error: key already contained in tree!");
+            return null;
+        }	// end else-if
+        else { // search the right subtree
+            newSubtree = insertItem(tNode.getRightChild(), newItem);
+            tNode.setRightChild(newSubtree);
+            return tNode;
+        }  // end if
+    }  // end insertItem
+
+
+    protected TreeNode<T> deleteItem(TreeNode<T> tNode, KT searchKey) {
+        // Calls: deleteNode.
+        TreeNode<T> newSubtree;
+        if (tNode == null) {
+            throw new TreeException("TreeException: Item not found");
+        }
+        else {
+            T nodeItem = tNode.getItem();
+            if (searchKey.compareTo(nodeItem.getKey()) == 0) {
+                // item is in the root of some subtree
+                tNode = deleteNode(tNode);  // delete the item
+            }
+            // else search for the item
+            else if (searchKey.compareTo(nodeItem.getKey()) < 0) {
+                // search the left subtree
+                newSubtree = deleteItem(tNode.getLeftChild(), searchKey);
+                tNode.setLeftChild(newSubtree);
+            }
+            else { // search the right subtree
+                newSubtree = deleteItem(tNode.getRightChild(), searchKey);
+                tNode.setRightChild(newSubtree);
+            }  // end if
+        }  // end if
+        return tNode;
+    }  // end deleteItem
+
+    protected TreeNode<T> deleteNode(TreeNode<T> tNode) {
+        // Algorithm note: There are four cases to consider:
+        //   1. The tNode is a leaf.
+        //   2. The tNode has no left child.
+        //   3. The tNode has no right child.
+        //   4. The tNode has two children.
+        // Calls: findLeftmost and deleteLeftmost
+        T replacementItem;
+
+        // test for a leaf
+        if ( (tNode.getLeftChild() == null) &&
+                (tNode.getRightChild() == null) ) {
+            return null;
+        }  // end if leaf
+
+        // test for no left child
+        else if (tNode.getLeftChild() == null) {
+            return tNode.getRightChild();
+        }  // end if no left child
+
+        // test for no right child
+        else if (tNode.getRightChild() == null) {
+            return tNode.getLeftChild();
+        }  // end if no right child
+
+        // there are two children:
+        // retrieve and delete the inorder successor
+        else {
+            replacementItem = findLeftmost(tNode.getRightChild());
+            tNode.setItem(replacementItem);
+            tNode.setRightChild(deleteLeftmost(tNode.getRightChild()));
+            return tNode;
+        }  // end else
+    }  // end deleteNode
+
+    protected T findLeftmost(TreeNode<T> tNode)  {
+        TreeNode<T> leftNode = tNode.getLeftChild();
+
+        while (leftNode != null) {	// cycle through nodes until no left child is found
+            tNode = leftNode;
+            leftNode = tNode.getLeftChild();
+        }	// end while
+
+        return tNode.getItem();
+    }  // end findLeftmost
+
+    protected TreeNode<T> deleteLeftmost(TreeNode<T> tNode) {
+        if (tNode.getLeftChild() == null) {
+            return tNode.getRightChild();
+        }	// end if
+        else {
+            tNode.setLeftChild(deleteLeftmost(tNode.getLeftChild()));
+            return tNode;
+        }  // end else
+    }  // end deleteLeftmost
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  // end MyBinarySearchTree::::::::::::::
+MyBinarySearchTreePlus.java
+::::::::::::::
+
+public class MyBinarySearchTreePlus <T extends KeyedItem<KT>,
+    KT extends Comparable<? super KT>> extends MyBinarySearchTree<T,KT>
+    implements BSTPInterface {
+
+
+    public MyBinarySearchTreePlus() {
+    }  // end default constructor
+
+    public MyBinarySearchTreePlus(T rootItem) {
+        super(rootItem);
+    }	// end Constructor
+
+
+    @Override
+    public int getHeight() {
+        int height = 0;
+
+        if (!isEmpty()) {
+            int leftHeight = 0;
+            int rightHeight = 0;
+
+            TreeNode<T> leftChild = root.getLeftChild();
+            TreeNode<T> rightChild = root.getRightChild();
+            if (leftChild != null) leftHeight = findHeight(leftChild);
+            if (rightChild != null) rightHeight = findHeight(rightChild);
+
+            height = leftHeight > rightHeight ? leftHeight + 1 : rightHeight + 1;
+        }	// end if
+
+
+        return height;
+    }	// end getHeight
+
+    protected int findHeight(TreeNode<T> tNode) {
+        int height = 1;
+        int leftHeight = 0;
+        int rightHeight = 0;
+
+        TreeNode<T> leftChild = tNode.getLeftChild();
+        TreeNode<T> rightChild = tNode.getRightChild();
+        if (leftChild != null) leftHeight += findHeight(leftChild);
+        if (rightChild != null) rightHeight += findHeight(rightChild);
+
+        height += leftHeight > rightHeight ? leftHeight : rightHeight;
+
+        return height;
+    }	// end findHeight
+
+
+    @Override
+    public int getSize() {
+        int size = 0;
+
+        if (!isEmpty()) {
+            TreeNode<T> leftChild = root.getLeftChild();
+            TreeNode<T> rightChild = root.getRightChild();
+            if (leftChild != null) size += countSize(leftChild);
+            if (rightChild != null) size += countSize(rightChild);
+
+            size += 1;
+        }	// end if
+
+
+        return size;
+    }	// end getSize
+
+    private int countSize(TreeNode<T> tNode) {
+        int toReturn = 1;	// the # of nodes in the subtree starting at this node
+
+        TreeNode<T> leftChild = tNode.getLeftChild();
+        TreeNode<T> rightChild = tNode.getRightChild();
+        if (leftChild != null) toReturn += countSize(leftChild);
+        if (rightChild != null) toReturn += countSize(rightChild);
+
+        return toReturn;
+    }	// end countSize
+
+
+    @Override
+    public String toStringInorder() {
+        String toReturn = "";
+
+        if (!isEmpty()) {
+            TreeNode<T> leftChild = root.getLeftChild();
+            if (leftChild != null) {
+                toReturn += inOrderString(leftChild) + "  ";
+            }	// end
+
+            toReturn += root.getItem().getKey().toString();
+
+            TreeNode<T> rightChild = root.getRightChild();
+            if (rightChild != null) {
+                toReturn += "  " + inOrderString(rightChild);
+            }	// end if
+
+        }	// end if
+
+        return toReturn;
+    }	// end toStringInorder
+
+    private String inOrderString(TreeNode<T> tNode) {
+        String toReturn = "";
+
+        if (tNode.getLeftChild() != null) {
+            toReturn += inOrderString(tNode.getLeftChild()) + "  ";
+        }	// end if
+
+        toReturn += tNode.getItem().getKey().toString();
+
+        if (tNode.getRightChild() != null) {
+            toReturn += "  " + inOrderString(tNode.getRightChild());
+        }	// end if
+
+        return toReturn;
+    }	// end inOrderString
+
+
+    @Override
+    public String toStringPreorder() {
+        String toReturn = "";
+
+        if (!isEmpty()) {
+            toReturn += root.getItem().getKey().toString();
+
+            TreeNode<T> leftChild = root.getLeftChild();
+            if (leftChild != null) toReturn += "  " + preOrderString(leftChild);
+
+            TreeNode<T> rightChild = root.getRightChild();
+            if (rightChild != null) toReturn += "  " + preOrderString(rightChild);
+
+        }	// end if
+
+        return toReturn;
+    }	// end toStringPreorder
+
+    private String preOrderString(TreeNode<T> tNode) {
+        String toReturn = tNode.getItem().getKey().toString();
+
+        if (tNode.getLeftChild() != null) {
+            toReturn += "  " + inOrderString(tNode.getLeftChild());
+        }	// end if
+
+        if (tNode.getRightChild() != null) {
+            toReturn += "  " + inOrderString(tNode.getRightChild());
+        }	// end if
+
+        return toReturn;
+    }
+
+
+    @Override
+    public String toStringPostorder() {
+        String toReturn = "";
+
+        if (!isEmpty()) {
+            TreeNode<T> leftChild = root.getLeftChild();
+            if (leftChild != null) toReturn += postOrderString(leftChild) + "  ";
+
+            TreeNode<T> rightChild = root.getRightChild();
+            if (rightChild != null) toReturn += postOrderString(rightChild) + "  ";
+
+            toReturn += root.getItem().getKey().toString();
+
+        }	// end if
+
+        return toReturn;
+    }	// end toStringPostorder
+
+    private String postOrderString(TreeNode<T> tNode) {
+        String toReturn = "";
+
+        if (tNode.getLeftChild() != null) {
+            toReturn += postOrderString(tNode.getLeftChild()) + "  ";
+        }	// end if
+
+        if (tNode.getRightChild() != null) {
+            toReturn += postOrderString(tNode.getRightChild()) + "  ";
+        }	// end if
+
+        toReturn += tNode.getItem().getKey().toString();
+
+        return toReturn;
+    }	// end postOrderString
+
+    @Override
+    public MyBinarySearchTreePlus<T,KT> getCopyOfTree() {
+        MyBinarySearchTreePlus<T,KT> newTree = new MyBinarySearchTreePlus<T,KT>(root.getItem());
+
+        if (root.getLeftChild() != null) addCopies(newTree,root.getLeftChild());
+        if (root.getRightChild() != null) addCopies(newTree,root.getRightChild());
+
+        return newTree;
+    }	// end getCopyOfTree
+
+    private void addCopies(MyBinarySearchTreePlus<T, KT> newTree, TreeNode<T> tNode) {
+        newTree.insert(tNode.getItem());
+
+        TreeNode<T> leftChild = tNode.getLeftChild();
+        TreeNode<T> rightChild = tNode.getRightChild();
+        if (leftChild != null) addCopies(newTree,leftChild);	// if there is a left child, continue recursing with it
+        if (rightChild != null) addCopies(newTree,rightChild);	// if there is a right child, continue recursing with it
+    }	// end addCopies
+
+}	// end Class
+::::::::::::::
+Minput.txt
+::::::::::::::
+2
+3
+4
+5
+6
+7
+8
+1
+4
+1
+2
+1
+6
+1
+1
+1
+5
+1
+3
+1
+7
+1
+8
+4
+5
+6
+7
+8
+9
+2
+3
+2
+6
+1
+45
+4
+5
+6
+7
+8
+10
+6
+7
+8
+10
+::::::::::::::
+Moutput.txt
+::::::::::::::
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 2
+Tree is empty, cannot delete!
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 3
+Tree is empty, cannot search!
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 4
+Tree is 0 nodes tall at its tallest.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 5
+Tree has 0 nodes in it.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 6
+The tree, inOrdered, goes as follows: 
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 7
+The tree, preOrdered, goes as follows: 
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 8
+The tree, postOrdered, goes as follows: 
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 4
+
+Item 4 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 2
+
+Item 2 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 6
+
+Item 6 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 1
+
+Item 1 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 5
+
+Item 5 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 3
+
+Item 3 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 7
+
+Item 7 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 8
+
+Item 8 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 4
+Tree is 4 nodes tall at its tallest.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 5
+Tree has 8 nodes in it.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 6
+The tree, inOrdered, goes as follows: 1  2  3  4  5  6  7  8
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 7
+The tree, preOrdered, goes as follows: 4  2  1  3  6  5  7  8
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 8
+The tree, postOrdered, goes as follows: 1  3  2  5  8  7  6  4
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 9
+Tree copied, test copy now. 'End program' when you want to go back to the original.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 2
+You are now removing an item from the tree.
+	Enter Item: 3
+
+Item 3 removed from the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 2
+You are now removing an item from the tree.
+	Enter Item: 6
+
+Item 6 removed from the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 1
+You are now inserting an item into the tree.
+	Enter Item: 45
+
+Item 45 inserted into the tree.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 4
+Tree is 4 nodes tall at its tallest.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 5
+Tree has 7 nodes in it.
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 6
+The tree, inOrdered, goes as follows: 1  2  4  45  5  7  8
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 7
+The tree, preOrdered, goes as follows: 4  2  1  7  45  5  8
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 8
+The tree, postOrdered, goes as follows: 1  2  45  5  8  7  4
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 10
+Back to original tree
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 6
+The tree, inOrdered, goes as follows: 1  2  3  4  5  6  7  8
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 7
+The tree, preOrdered, goes as follows: 4  2  1  3  6  5  7  8
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 8
+The tree, postOrdered, goes as follows: 1  3  2  5  8  7  6  4
+
+Select from the following menu:
+	1. Insert key in BST.
+	2. Delete key from BST.
+	3. Search for key in BST.
+	4. Display height of BST
+	5. Display size of BST.
+	6. Display content of BST in inorder.
+	7. Display content of BST in preorder.
+	8. Display content of BST in postorder.
+	9. Build copy of the tree, and test it.
+	10. Exit program.
+Make you menu selection now: 10
+Exitting now... Goodbye
