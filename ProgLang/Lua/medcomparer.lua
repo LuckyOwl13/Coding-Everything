@@ -81,13 +81,15 @@ function medcomparer()
 	io.write("P(H | Neg2) = ",HgivenPos2,"\n")
 	
 	
-	-- Calculate the results: which test is better for 1) detecting the sick and 2) ignoring the healthy?
+	-- Calculate the results: which test is better for 1) detecting the sick and 
+	--   2) ignoring the healthy?
 	Results = {}
 	Results[1] = DgivenPos1 - DgivenPos2  -- If pos, test1 better if neg, test2 better.
 	Results[2] = HgivenPos1 - HgivenPos2  -- If 0, equal.
 	
 	
-	-- Figure out which test is better: if both positive, test1 better if both negative, test2 better. If mixed or even, no test better
+	-- Figure out which test is better: if both positive, test1 better if both negative, 
+	--   test2 better. If mixed or even, no test better
 	if (Results[1] > 0) and (Results[2] > 0) then
 		io.write("Test 1 is better.\n")
 	elseif (Results[1] < 0 and Results[2] < 0) then
