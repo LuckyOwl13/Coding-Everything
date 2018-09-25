@@ -13,12 +13,13 @@ X = [[181,80,44], [177,70,43], [160,60,38], [154,54,37],
 Y = ['male', 'female', 'female', 'female', 'male', 
 	 'male', 'male', 'female', 'male', 'female', 'male']
 
-#Set counters
+#Set counters for Decision Tree
 DTcounter100 = 0
 DTcounter50 = 0
 DTcounter0 = 0
 #Evaluate DecisionTreeClassifier
-for x in range (0,100):
+rng = 100  # How many iterations for this run? 
+for x in range (0,rng):
 	correct = 0
 	#Create and train the classifier
 	clf = tree.DecisionTreeClassifier()
@@ -43,12 +44,12 @@ print("# 100%: " + str(DTcounter100))
 print("# 50%: " + str(DTcounter50))
 print("# 0%: " + str(DTcounter0))
 
-#Set counters
+#Set counters for Support Vector Classifier
 SVCcounter100 = 0
 SVCcounter50 = 0
 SVCcounter0 = 0
 #Evaluate Support Vector Classifier (SVC)
-for x in range (0,100):
+for x in range (0,rng):
 	correct = 0
 	#Create and train the classifier
 	clf = svm.SVC()
@@ -73,12 +74,12 @@ print("# 100%: " + str(SVCcounter100))
 print("# 50%: " + str(SVCcounter50))
 print("# 0%: " + str(SVCcounter0))
 
-#Set counters
+#Set counters for General Naive Bayes
 GNBcounter100 = 0
 GNBcounter50 = 0
 GNBcounter0 = 0
 #Evaluate Naive Bayes Classifier
-for x in range (0,100):
+for x in range (0,rng):
 	correct = 0
 	#Create and train the classifier
 	clf = GaussianNB()
