@@ -1,0 +1,3 @@
+Ice Knife,1,Evocation
+Unseen Servant,1,Conjuration
+Shocking Grasp,0,Evocation
