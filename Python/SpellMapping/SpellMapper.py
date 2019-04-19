@@ -13,10 +13,11 @@ class Spell(object):
 		self.level = level
 		self.school = school
 
-	def __str__(self):
+	def __repr__(self):
 		# Get the right suffix for the level 
 		suffix = 'st' if self.level == 1 else 'nd' if self.level == 2 else 'rd' if self.level == 3 else 'th'
-		return f'{self.name}, {self.level}{suffix}-level {self.school}'
+		return f'{self.name}'#, {self.level}{suffix}-level {self.school}'
+		# return f'{self.school} {self.level}'	# testing line used for testing correct edges
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # This script is to load spells into a program and then output a spell map of them
@@ -35,7 +36,7 @@ print("File opened, importing ... ", end='')
 
 # Load all spells into collection
 for line in file:
-	spellLine = line.split(',')
+	spellLine = line.strip().split(',')
 	spells.append(Spell(spellLine[0],int(spellLine[1]),spellLine[2]))
 file.close()
 print("Done !")
